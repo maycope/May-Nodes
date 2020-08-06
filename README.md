@@ -24,7 +24,7 @@
 
 ## 🛸 java基础
 
-* [并发多线程]([https://github.com/maycope/May-Nodes/blob/master/Java/%E5%B9%B6%E5%8F%91%E5%A4%9A%E7%BA%BF%E7%A8%8B.md](https://github.com/maycope/May-Nodes/blob/master/Java/并发多线程.md))
+* [并发多线程](https://github.com/maycope/May-Nodes/blob/master/Java/并发多线程.md)
 * 
 
 ## 🔑 操作系统
