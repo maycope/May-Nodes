@@ -5,7 +5,7 @@
 
 | 算法                                            |                          数据库                          |                          计算机网络                          |                          Java基础                          |                          操作系统                          |                          Spring                          |                          工具日常                          |
 | ----------------------------------------------- | :------------------------------------------------------: | :----------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------------: | :--------------------------------------------------------: |
-| [🏆](https://github.com/maycope/May-Nodes#-算法) | [📖](https://github.com/maycope/Leetcode-Classic#-数据库) | [🌍](https://github.com/maycope/Leetcode-Classic#-计算机网络) | [🛸](https://github.com/maycope/Leetcode-Classic#-Java基础) | [🔑](https://github.com/maycope/Leetcode-Classic#-操作系统) | [🎈](https://github.com/maycope/Leetcode-Classic#-Spring) | [🔧](https://github.com/maycope/Leetcode-Classic#-工具日常) |
+| [🏆](https://github.com/maycope/May-Nodes#-算法) | [📖](https://github.com/maycope/May-Nodes#-数据库) | [🌍](https://github.com/maycope/May-Nodes#-计算机网络) | [🛸](https://github.com/maycope/May-Nodes#-Java基础) | [🔑](https://github.com/maycope/May-Nodes#-操作系统) | [🎈](https://github.com/maycope/May-Nodes#-Spring) | [🔧](https://github.com/maycope/May-Nodes#-工具日常) |
 
 
 
