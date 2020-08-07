@@ -13,6 +13,8 @@
 
 ## 🏆 算法
 * [LeetCode分类题解](https://github.com/maycope/Leetcode-Classic)
+* [算法第四版记录](https://github.com/maycope/Algorithms4-Emphasis)
+* [系列目录]()
 
 
 ##  📖 数据库
@@ -36,3 +38,4 @@
 
 ## 🔧 工具日常
 * [nginx](https://github.com/maycope/May-Nodes/blob/master/toos/nginx.md)
+
