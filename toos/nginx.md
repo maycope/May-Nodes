@@ -5,8 +5,7 @@
 首先是对于`linux`环境下的安装(本地机器是Windows版本，大家可以使用`Vmware`,但是需要配置网络连接等，这里就不再展示虚拟机上的演示。这里使用到个人的**阿里云云服务器**搭配上**xftp**与**xshell**来进行文件的上传与连接命令行的输入)
 
 
-
-![image-20200807092205021](http://maycope.cn/images/image-20200807092205021.png)
+<div align = "center"><img src= "http://maycope.cn/images/image-20200807092205021.png"></div>
 
 **注意：以下命令皆为CentOS7所使用。**
 
@@ -68,8 +67,7 @@ make && make install
 ```shell
 firewall-cmd --list-all
 ```
-
-![image-20200807093326764](http://maycope.cn/images/image-20200807093326764.png)
+<div align = "center"><img src= "http://maycope.cn/images/image-20200807093326764.png"></div>
 
 若是没有进行端口的开发可以使用如下命令进行端口的开放：
 
@@ -105,8 +103,7 @@ cd /usr/local/sbin   # 注意要进入到安装的nginx对应的相关的目录�
 
 在启动完成之后就可以进行ip地址的访问（因为对于nginx来说默认是启动在80 端口，所以可直接进行ip地址的访问）
 
-![image-20200807094702610](http://maycope.cn/images/image-20200807094702610.png)
-
+<div align = "center"><img src= "http://maycope.cn/images/image-20200807094702610.png"></div>
 
 
 ## 配置文件讲解：
@@ -236,8 +233,7 @@ http 全局块配置的指令包括文件引入、MIME-TYPE 定义、日志自�
 
 完成配置之后记得重启服务：即可看到如下展示：表示从80端口跳转到8080端口
 
-![image-20200807100806544](http://maycope.cn/images/image-20200807100806544.png)
-
+<div align = "center"><img src= "http://maycope.cn/images/image-20200807100806544.png"></div>
 
 
 #### 实例二
@@ -255,11 +251,11 @@ http 全局块配置的指令包括文件引入、MIME-TYPE 定义、日志自�
     }
 ```
 
-![image-20200807102916770](http://maycope.cn/images/image-20200807102916770.png)
-
+<div align = "center"><img src= "http://maycope.cn/images/image-20200807102916770.png"></div>
 这个时候我们就可以访问如下网址：可以发现如下的3308（自己测试时候要提前开启端口）端口搭配上edu路径和对应的**index.html** 就可以访问到我们`tomact `服务器下面的对应的页面信息。
 
-![image-20200807103007135](http://maycope.cn/images/image-20200807103007135.png)
+
+<div align = "center"><img src= "http://maycope.cn/images/image-20200807103007135.png"></div>
 
 ## 负载均衡
 
@@ -425,7 +421,7 @@ virtual_router_id 51	# 主、备机的 virtual_router_id 必须相同
 
 3. 脚本文件的编写,不同于使用docker 的方式，如下是使用到`dcoker `的解决方案,配置文件的不同。
 
-   ![image-20200807135628511](http://maycope.cn/images/image-20200807135628511.png)
+   <div align = "center"><img src= "http://maycope.cn/images/image-20200807135628511.png"></div>
 
 如下我们编写具体的信息查看nginx是否存活。存放的目录是`/usr/local/src/`。
 
