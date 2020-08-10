@@ -17,8 +17,10 @@
 * [专题系列目录](https://github.com/maycope/May-Nodes/blob/master/algorithm/系列-目录.md)
 * [高频面试系列目录](https://github.com/maycope/May-Nodes/blob/master/algorithm/面试系列目录.md)
 
-
 ##  📖 数据库
+
+* [MySQL面试必备](https://github.com/maycope/May-Nodes/blob/master/Nodes/MySQL.md)
+* [Redis面试必备](https://github.com/maycope/May-Nodes/blob/master/Nodes/redis.md)
 
 
 ## 🌍 计算机网络
