@@ -30,6 +30,7 @@
 ## 🛸 java基础
 
 * [并发多线程](https://github.com/maycope/May-Nodes/blob/master/Java/并发多线程.md)
+* [JVM](https://github.com/maycope/May-Nodes/blob/master/Java/JVM.md)
 
 ## 🔑 操作系统
 
