@@ -16,6 +16,7 @@
 * [算法第四版记录](https://github.com/maycope/Algorithms4-Emphasis)
 * [专题系列目录](https://github.com/maycope/May-Nodes/blob/master/algorithm/系列-目录.md)
 * [高频面试系列目录](https://github.com/maycope/May-Nodes/blob/master/algorithm/面试系列目录.md)
+* [每日一题](https://github.com/maycope/May-Nodes/blob/master/algorithm/每日一题.md)
 
 ##  📖 数据库
 
