@@ -1,0 +1,118 @@
+###  中序和后序建立
+
+####  题目（106-中等）
+
+根据一棵树的中序遍历与后序遍历构造二叉树。
+
+**注意:**
+你可以假设树中没有重复的元素。
+
+例如，给出
+
+```
+中序遍历 inorder = [9,3,15,20,7]
+后序遍历 postorder = [9,15,7,20,3]
+```
+
+
+返回如下的二叉树：
+
+        3
+       / \
+      9  20
+        /  \
+       15   7
+####  思考
+
+1. 利用Map来存放每个值和其相对应的下标值。
+2. 后序的特点是对于最后一个元素就是根节点。
+3. 在中序中找到对应的根节点，进行左右的分割，递归进行左右子树的建立。
+
+#####  位置关系的建立
+
+1. 取出来对应的最后一个节点，命名为`ri`，在中序中找到对应节点。
+2. 递归建立时候：
+   1. 左子树中的中序数组： `is`（表示中序的开始） = `is`，`ie`（表示中序的结束） = `ri-1`。
+   2. 左子树中的后序数组： `ps`（表示后序的开始） = `ps`，`pe`（表示中序的结束） = `ps+ri-is-1`（后序的结束= 后序的开始+ 中序中左子树的长度**（ri-1-is）**）
+   3. 右子数的中序数组 ： `is  = ri+1`，`ie = ie`。
+   4. 右子数的后序数组 ： `ps = ps+ri-is-1+1`，`pe = pe-1`。
+
+见下图：
+
+<img src= "https://gitee.com/maycopes/MyImages/raw/master//images/image-20200926145129888.png">
+
+####   代码
+
+```java
+   HashMap<Integer,Integer> memo = new HashMap<>();
+    int[] post;
+
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        for(int i = 0;i < inorder.length; i++) memo.put(inorder[i], i);
+        post = postorder;
+        TreeNode root = buildTree(0, inorder.length - 1, 0, post.length - 1);
+        return root;
+    }
+
+    public TreeNode buildTree(int is, int ie, int ps, int pe) {
+        if(ie < is || pe < ps) return null;
+
+        int root = post[pe];
+        int ri = memo.get(root);
+
+        TreeNode node = new TreeNode(root);
+        node.left = buildTree(is, ri - 1, ps, ps + ri - is - 1);
+        node.right = buildTree(ri + 1, ie, ps + ri - is, pe - 1);
+        return node;
+    }
+```
+
+### 中序和前序
+
+####  题目（105-中等）
+
+####  思考
+
+1. 利用Map存放具体的值于其对应的下标值。
+
+2. 对应的前序遍历来说第一个值就是我们的头节点值。
+3. 在中序中寻找对应的值，然后进行左右子树的分割处理。
+
+#####  位置关系的建立
+
+具体的思想见上面的分析，这里不再进行深入的分析：
+
+<img src ="https://gitee.com/maycopes/MyImages/raw/master//images/image-20200926150813358.png">
+
+####  代码
+
+```java
+    private int[] preorder;
+    private Map<Integer, Integer> hash;
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        int preLen = preorder.length;
+        int inLen = inorder.length;
+        this.preorder = preorder;
+        this.hash = new HashMap<>();
+        for (int i = 0; i < inLen; i++) {
+            hash.put(inorder[i], i);
+        }
+        return buildTree(0, preLen - 1, 0, inLen - 1);
+    }
+
+    private TreeNode buildTree(int preLeft, int preRight, int inLeft, int inRight) {
+
+        if (preLeft > preRight || inLeft > inRight) {
+            return null;
+        }
+        int pivot = preorder[preLeft];
+        TreeNode root = new TreeNode(pivot);
+        int pivotIndex = hash.get(pivot);
+        root.left = buildTree(preLeft + 1, pivotIndex - inLeft + preLeft,
+                inLeft, pivotIndex - 1);
+        root.right = buildTree(pivotIndex - inLeft + preLeft + 1, preRight,
+                pivotIndex + 1, inRight);
+        return root;
+    }
+```
+
